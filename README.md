@@ -83,6 +83,7 @@ This document provides an overview of the core service environments within the A
 
 ## Container Communications
 [Edit here](https://lucid.app/lucidchart/b1827ce9-7d55-43ab-a504-9797e6b07d24/edit?viewport_loc=289%2C520%2C810%2C928%2C0_0&invitationId=inv_3c583eea-eea8-4eb8-b5e9-f2afd1d8c0c3)
+
 The end user goes to the Blacklight docker container to search the access platform. Blacklight calls the other web server docker containers to receive content to show the end user.
 <img width="800" height="800" alt="Discovery Platform Infrastructure" src="https://github.com/user-attachments/assets/b2206568-9e93-4f67-ab33-9917b75604bd" />
 
