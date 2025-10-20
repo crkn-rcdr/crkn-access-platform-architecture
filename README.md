@@ -13,10 +13,12 @@ This document provides an overview of the core service environments within the A
 ## Architecture Notes & Considerations
 
 - We can either have **1 Solr server with 3 cores per environment**, or **3 Solr servers with 1 core per environment**.  
-- We imagine **one Swift cluster**, but we will try to break down content into **separate Swift containers**.  
+- We have **one Swift cluster**, but we will try to break down content into **separate Swift containers**.  
 - We can either **build a REST API over the PDF Swift container** (additional Docker container) or **expose it publicly**, since we serve PDFs directly to end users.
 - We can swap to  different IIIF Image server from **Cantaloupe** - See: [Loris](https://github.com/loris-imageserver/loris), [IIPImage](http://iipimage.sourceforge.net/documentation/server/), [RAIS](https://github.com/uoregon-libraries/rais-image-server)
 - We are entirely removing our use of CouchDB for access
+- We are sequentially rolling out the following environments. We will first work on Canadiana.
+- We can think about having an additional -test environment **per host environment**
 ---
 
 ### Canadiana
