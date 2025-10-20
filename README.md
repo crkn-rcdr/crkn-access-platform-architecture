@@ -87,3 +87,6 @@ This document provides an overview of the core service environments within the A
 The end user goes to the Blacklight docker container to search the access platform. Blacklight calls the other web server docker containers to receive content to show the end user.
 <img width="800" height="800" alt="Discovery Platform Infrastructure" src="https://github.com/user-attachments/assets/b2206568-9e93-4f67-ab33-9917b75604bd" />
 
+## Project Planning
+To see a list of Issues for the implementation of this plan, [click here](https://github.com/orgs/crkn-rcdr/projects/16/views/5?pane=issue&itemId=79315305&issue=crkn-rcdr%7Csystems-administration-public%7C5).
+
