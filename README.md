@@ -1,0 +1,1 @@
+# crkn-access-platform-architecture
