@@ -82,9 +82,9 @@ This document provides an overview of the core service environments within the A
 | PDF | N/A | Swift container: pdf_nrcan |
 | ARK | ark-nrcan, port: xxxx, env (access protected) | Solr core: ark_map_nrcan |
 
-# Storage Requirements - Portal Aggregation Summary (2025-10-22)
+## Storage Requirements - Portal Aggregation Summary (2025-10-22)
 
-## Canvas-Level Totals
+### Canvas-Level Totals
 
 | Portal           | Canvases  | Image Source      | OCR PDF     | TOTAL      |
 |------------------|------------:|-------------:|-------------:|-------------:|
@@ -96,7 +96,7 @@ This document provides an overview of the core service environments within the A
 
 ---
 
-## Manifest-Level (PDF Only)
+### Manifest-Level (PDF Only)
 
 | Portal           | Manifests | Manifest PDF |
 |------------------|-----------:|--------------:|
