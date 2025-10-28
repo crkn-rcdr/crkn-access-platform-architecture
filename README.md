@@ -20,6 +20,8 @@ This document provides an overview of the core service environments within the A
 - We are sequentially rolling out the following environments. We will first work on Canadiana.
 - We can think about having an additional -test environment **per host environment**
 - There is no change in the schemas between environments for the data stores.
+- We will need to theink about bot/crawler management and robot.txt rules
+- We will need to consider rate limiting policies at large as well
 ---
 
 ### Canadiana
