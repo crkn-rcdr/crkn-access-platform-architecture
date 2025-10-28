@@ -130,7 +130,8 @@ This document provides an overview of the core service environments within the A
 [Edit here](https://lucid.app/lucidchart/b1827ce9-7d55-43ab-a504-9797e6b07d24/edit?viewport_loc=289%2C520%2C810%2C928%2C0_0&invitationId=inv_3c583eea-eea8-4eb8-b5e9-f2afd1d8c0c3)
 
 The end user goes to the Blacklight docker container to search the access platform. Blacklight calls the other web server docker containers to receive content to show the end user.
-<img width="1766" height="2104" alt="Access Platform Infrastructure - Page 1" src="https://github.com/user-attachments/assets/dc0d8191-1184-4444-af2d-621f6983445e" />
+<img width="1691" height="2111" alt="Access Platform Infrastructure - Page 1 (1)" src="https://github.com/user-attachments/assets/4afc671a-c902-4702-87b2-ed4634040910" />
+
 
 ## Project Planning
 To see a list of Issues for the implementation of this plan, [click here](https://github.com/orgs/crkn-rcdr/projects/16/views/5?pane=issue&itemId=79315305&issue=crkn-rcdr%7Csystems-administration-public%7C5).
