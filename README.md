@@ -106,6 +106,16 @@ This document provides an overview of the core service environments within the A
 | gac              | 35,584     | 270.42 GiB   |
 | nrcan            | 688        |  4.17 GiB     |
 
+### Solr Index Sizes (Rough Estimation)
+
+| Portal          | Blaclight Marc Core (no-positional data) | Content Search Core (positional data) |
+|-----------------|-----------------|----------------|
+| canadiana          | 25.60 GiB       | 38.96 GiB       |
+| heritage     | 9.89 GiB        | 15.06 GiB       |
+| parl         | 5.28 GiB        | 8.03 GiB        |
+| gac          | 709.51 MiB      | 1.05 GiB        |
+| nrcan        | 9.03 MiB        | 13.75 MiB       |
+
 ## Container Communications
 [Edit here](https://lucid.app/lucidchart/b1827ce9-7d55-43ab-a504-9797e6b07d24/edit?viewport_loc=289%2C520%2C810%2C928%2C0_0&invitationId=inv_3c583eea-eea8-4eb8-b5e9-f2afd1d8c0c3)
 
