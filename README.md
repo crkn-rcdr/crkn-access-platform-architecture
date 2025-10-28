@@ -34,6 +34,8 @@ This document provides an overview of the core service environments within the A
 | PDF | N/A | Swift container: pdf_canadiana |
 | [ARK](https://github.com/crkn-rcdr/noid-ark) | ark-canadiana, internal port: xxxx, [.env (access protected)](https://start.1password.com/open/i?a=PTZ4LGIASRD7LAT3GQWIQBPHGU&v=yb4563uqdpjn7xdgzw4f7tp3qy&i=uez5nqx4shqzhxdqlg7u7johoq&h=my.1password.com)  | Solr core: ark_map_canadiana |
 
+---
+
 ### Heritage
 **URL:** https://heritage.canadiana.ca/
 
@@ -45,6 +47,8 @@ This document provides an overview of the core service environments within the A
 | IIIF Image | (Cantaloupe/Loris/etc.) | Swift container: iiif_image_heritage |
 | PDF | N/A | Swift container: pdf_heritage |
 | ARK | ark-heritage, port: xxxx, env (access protected)  | Solr core: ark_map_heritage |
+
+---
 
 ### Parl
 **URL:** https://parl.canadiana.ca/
@@ -58,6 +62,8 @@ This document provides an overview of the core service environments within the A
 | PDF | N/A | Swift container: pdf_parl |
 | ARK | ark-parl, port: xxxx, env (access protected)  | Solr core: ark_map_parl |
 
+---
+
 ### GAC
 **URL:** https://gac.canadiana.ca/
 
@@ -69,6 +75,8 @@ This document provides an overview of the core service environments within the A
 | IIIF Image | (Cantaloupe/Loris/etc.) | Swift container: iiif_image_gac |
 | PDF | N/A | Swift container: pdf_gac |
 | ARK | ark-gac, port: xxxx, env (access protected)  | Solr core: ark_map_gac |
+
+---
 
 ### NRCan
 **URL:** https://nrcan.canadiana.ca/
@@ -105,6 +113,8 @@ This document provides an overview of the core service environments within the A
 | parl             | 6,640      | 2.39 TiB     |
 | gac              | 35,584     | 270.42 GiB   |
 | nrcan            | 688        |  4.17 GiB     |
+
+---
 
 ### Solr Index Sizes (Rough Estimation)
 
