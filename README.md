@@ -128,6 +128,18 @@ This document provides an overview of the core service environments within the A
 | gac          | 709.51 MiB      | 1.05 GiB        |
 | nrcan        | 9.03 MiB        | 13.75 MiB       |
 
+---
+
+### IIIF Manifest JSON Storage
+| Source   | Total Count | Avg Size per Item (GiB) | Estimated Total Size (GiB) |
+|:----------|-------------:|------------------------:|----------------------------:|
+| heritage  | 25,906       | 0.001697               | 43.99                       |
+| www       | 409,523      | 0.0000510              | 20.89                       |
+| parl      | 7,559        | 0.000671               | 5.07                        |
+| gac       | 36,311       | 0.0000341              | 1.24                        |
+| nrcan     | 688          | 0.000361               | 0.25                        |
+| **Total** | **479,987**  | —                      | **≈ 71.44 GiB**             |
+
 ## Container Communications
 [Edit here](https://lucid.app/lucidchart/b1827ce9-7d55-43ab-a504-9797e6b07d24/edit?viewport_loc=289%2C520%2C810%2C928%2C0_0&invitationId=inv_3c583eea-eea8-4eb8-b5e9-f2afd1d8c0c3)
 
