@@ -94,19 +94,30 @@ This document provides an overview of the core service environments within the A
 
 ## Storage Requirements - Portal Aggregation Summary (2025-10-22)
 
-### Canvas-Level Totals
+### OpenStack Swift - Canvas-Level PDF Totals
 
-| Portal           | Canvases  | Image Source      | OCR PDF     | TOTAL      |
-|------------------|------------:|-------------:|-------------:|-------------:|
-| canadiana        | 21,271,334  | 18.62 TiB   | 11.63 TiB   | 30.25 TiB   |
-| heritage         | 43,195,033  | 8.61 TiB    | 4.49 TiB    | 13.11 TiB   |
-| parl             | 4,728,789   | 4.28 GiB    | 2.40 TiB    | 2.40 TiB    |
-| gac              | 1,389,764   | 1.82 TiB    | 322.51 GiB  | 2.13 TiB    |
-| nrcan            | 261,403     | 651.74 MiB  | 4.11 GiB    | 4.74 GiB    |
+| Portal           | Single Page PDF     |
+|------------------|------------:|
+| canadiana        | 11.63 TiB   | 
+| heritage         | 4.49 TiB    |
+| parl             | 2.40 TiB    |
+| gac              | 322.51 GiB  |
+| nrcan            | 4.11 GiB    | 
 
 ---
 
-### Manifest-Level (PDF Only)
+### OpenStack Swift - Image Totals
+| Source   | Total Images | Avg Size per Image | Estimated Total Size (TB) |
+|:----------|--------------:|-------------------:|---------------------------:|
+| canadiana       | 21,271,334    | 1.70 MB            | 37.04 TB                   |
+| heritage  | 43,195,033    | 1.93 MB            | 85.43 TB                   |
+| parl      | 4,728,789     | 776 KB             | 3.75 TB                    |
+| gac       | 1,389,764     | 368 KB             | 0.52 TB                    |
+| nrcan     | 261,403       | 156 KB             | 0.04 TB                    |
+
+---
+
+### OpenStack Swift - Manifest-Level (PDF Only)
 
 | Portal           | Manifests | Manifest PDF |
 |------------------|-----------:|--------------:|
@@ -115,6 +126,17 @@ This document provides an overview of the core service environments within the A
 | parl             | 6,640      | 2.39 TiB     |
 | gac              | 35,584     | 270.42 GiB   |
 | nrcan            | 688        |  4.17 GiB     |
+
+---
+
+### OpenStack Swift - IIIF Manifest JSON Storage
+| Source   | Total Count | Avg Size per Item (GiB) | Estimated Total Size (GiB) |
+|:----------|-------------:|------------------------:|----------------------------:|
+| canadiana       | 409,523      | 0.0000510              | 20.89                       |
+| heritage  | 25,906       | 0.001697               | 43.99                       |
+| parl      | 7,559        | 0.000671               | 5.07                        |
+| gac       | 36,311       | 0.0000341              | 1.24                        |
+| nrcan     | 688          | 0.000361               | 0.25                        |
 
 ---
 
@@ -128,17 +150,14 @@ This document provides an overview of the core service environments within the A
 | gac          | 709.51 MiB      | 1.05 GiB        |
 | nrcan        | 9.03 MiB        | 13.75 MiB       |
 
+
 ---
 
-### IIIF Manifest JSON Storage
-| Source   | Total Count | Avg Size per Item (GiB) | Estimated Total Size (GiB) |
-|:----------|-------------:|------------------------:|----------------------------:|
-| heritage  | 25,906       | 0.001697               | 43.99                       |
-| www       | 409,523      | 0.0000510              | 20.89                       |
-| parl      | 7,559        | 0.000671               | 5.07                        |
-| gac       | 36,311       | 0.0000341              | 1.24                        |
-| nrcan     | 688          | 0.000361               | 0.25                        |
-| **Total** | **479,987**  | —                      | **≈ 71.44 GiB**             |
+**OpenStack Swift Rought Estimate** : 164.42 TiB
+
+**Solr Rough Estimate** : 104.59 GiB
+
+---
 
 ## Container Communications
 [Edit here](https://lucid.app/lucidchart/b1827ce9-7d55-43ab-a504-9797e6b07d24/edit?viewport_loc=289%2C520%2C810%2C928%2C0_0&invitationId=inv_3c583eea-eea8-4eb8-b5e9-f2afd1d8c0c3)
