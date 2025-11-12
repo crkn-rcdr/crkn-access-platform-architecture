@@ -162,8 +162,7 @@ This document provides an overview of the core service environments within the A
 ## Container Communications
 [Edit here](https://lucid.app/lucidchart/b1827ce9-7d55-43ab-a504-9797e6b07d24/edit?viewport_loc=289%2C520%2C810%2C928%2C0_0&invitationId=inv_3c583eea-eea8-4eb8-b5e9-f2afd1d8c0c3)
 
-<img width="4321" height="3189" alt="Access Platform Infrastructure - Infrastructure Diagram (1)" src="https://github.com/user-attachments/assets/299754b0-7466-4a12-9c46-3400d238d23b" />
-
+<img width="3789" height="3302" alt="Access Platform Infrastructure - Infrastructure Diagram (2)" src="https://github.com/user-attachments/assets/b9586f9d-e952-44f9-a490-208c9782828c" />
 
 
 ## Project Planning
