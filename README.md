@@ -12,7 +12,7 @@ This document provides an overview of the core service environments within the A
 
 ## Architecture Notes & Considerations
 
-- We can either have **1 Solr docker container with 3 cores per environment**, or **3 Solr docker containers (test, demo, prod) with 1 core per environment (cap, heritage, parl..)**.
+- We need to support test and prod Solr containers, and we need four cores per host (see diagram.) 
   - What is Solr Core ?
     - A Solr core is basically an index of the text and fields found in documents that we publish to Solr.
     - A single Solr instance can contain multiple cores, which are separate from each other based on local criteria.
