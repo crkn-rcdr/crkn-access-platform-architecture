@@ -13,7 +13,7 @@ This document provides an overview of the core service environments within the A
 ## Architecture Notes & Considerations
 
 - We need to support test and prod Solr containers, and we need four cores per host (see diagram.) 
-  - What is Solr Core ?
+  - [What is Solr Core ?](https://medium.com/@luaburak/unlocking-the-secrets-of-solr-cores-where-data-alchemy-meets-search-sorcery-a12fbfbbeedf)
     - A Solr core is basically an index of the text and fields found in documents that we publish to Solr.
     - A single Solr instance can contain multiple cores, which are separate from each other based on local criteria.
     - Each core will have its own configuration and indexed data storage location.
