@@ -22,7 +22,7 @@ This document provides an overview of the core service environments within the A
 - There is no change in the schemas between environments for the data stores.
 - We will need to theink about bot/crawler management and robot.txt rules
 - We will need to consider rate limiting policies at large as well
-- Over the API docker containers, a API Gateway container can configure the "security" and rate liomiting for the APIs, the best open source option is [KrakenD](https://www.krakend.io/docs/overview/installing/)
+- Over the API docker containers, a API Gateway container can configure the "security" and rate limiting for the APIs, the best open source option is [KrakenD](https://www.krakend.io/docs/overview/installing/)
 ---
 
 ### Canadiana
