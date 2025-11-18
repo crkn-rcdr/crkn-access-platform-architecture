@@ -12,7 +12,14 @@ This document provides an overview of the core service environments within the A
 
 ## Architecture Notes & Considerations
 
-- We can either have **1 Solr docker container with 3 cores per environment**, or **3 Solr docker containers (test, demo, prod) with 1 core per environment (cap, heritage, parl..)**.  
+- We can either have **1 Solr docker container with 3 cores per environment**, or **3 Solr docker containers (test, demo, prod) with 1 core per environment (cap, heritage, parl..)**.
+  - What is Solr Core ?
+    - A Solr core is basically an index of the text and fields found in documents that we publish to Solr.
+    - A single Solr instance can contain multiple cores, which are separate from each other based on local criteria.
+    - Each core will have its own configuration and indexed data storage location.
+    - When the Solr server runs in a standalone mode, this configuration is called Core
+    - When the solr server runs in a Cloud mode, this configuration is called Collection
+    - This core folder will contain all the configurations and indexed data.
 - We have **one Swift cluster**, but we will try to break down content into **separate Swift containers**.  
 - We can either **build a REST API over the PDF Swift container** (additional Docker container) or **expose it publicly**, since we serve PDFs directly to end users.
 - We can swap to  different IIIF Image docker container from **Cantaloupe** - See: [Loris](https://github.com/loris-imageserver/loris), [IIPImage](http://iipimage.sourceforge.net/documentation/server/), [RAIS](https://github.com/uoregon-libraries/rais-image-server)
