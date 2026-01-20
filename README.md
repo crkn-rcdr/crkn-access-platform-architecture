@@ -20,7 +20,7 @@ This document provides an overview of the core service environments within the A
     - When the Solr server runs in a standalone mode, this configuration is called Core
     - When the solr server runs in a Cloud mode, this configuration is called Collection
     - This core folder will contain all the configurations and indexed data.
-- We have **one Swift cluster**, but we will try to break down content into **separate Swift containers**.  
+- We have **one Swift cluster**, but we will try to break down content into **separate Swift containers**.
 - We can either **build a REST API over the PDF Swift container** (additional Docker container) or **expose it publicly**, since we serve PDFs directly to end users.
 - We can swap to  different IIIF Image docker container from **Cantaloupe** - See: [Loris](https://github.com/loris-imageserver/loris), [IIPImage](http://iipimage.sourceforge.net/documentation/server/), [RAIS](https://github.com/uoregon-libraries/rais-image-server)
 - We are entirely removing our use of CouchDB for access
