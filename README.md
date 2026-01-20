@@ -35,14 +35,14 @@ This document provides an overview of the core service environments within the A
 ### Canadiana
 **URL:** https://www.canadiana.ca/
 
-| Service | Docker Container | Data Stores |
-|---------|------------------|-------------|
-| [Blacklight Search](https://github.com/crkn-rcdr/crkn_canadiana_blacklight) | blacklight-canadiana, internal port: 3000, [.env (access protected)](https://start.1password.com/open/i?a=PTZ4LGIASRD7LAT3GQWIQBPHGU&v=yb4563uqdpjn7xdgzw4f7tp3qy&i=qw7bpykrrk6ylk4hh2pngnswwe&h=my.1password.com) | Solr core: [blacklight_marc_canadiana](https://github.com/crkn-rcdr/crkn_canadiana_blacklight/tree/master/data/data/blacklight_marc/conf) |
-| [IIIF Content Search](https://github.com/crkn-rcdr/crkn_iiif_content_search) | iiif-cs-canadiana, internal port: 3000, [.env (access protected)](https://start.1password.com/open/i?a=PTZ4LGIASRD7LAT3GQWIQBPHGU&v=yb4563uqdpjn7xdgzw4f7tp3qy&i=ozakedjbvm62ygkdvertamb3ky&h=my.1password.com) | Solr core: [content_search_canadiana](https://github.com/crkn-rcdr/crkn_iiif_content_search/tree/main/solr/config) |
-| [IIIF Presentation](https://github.com/crkn-rcdr/crkn-IIIF-presentation-api) | iiif-p-canadiana, internal port: xxxx, [.env (access protected)](https://start.1password.com/open/i?a=PTZ4LGIASRD7LAT3GQWIQBPHGU&v=yb4563uqdpjn7xdgzw4f7tp3qy&i=zacrecf22qajihjousdawnqpua&h=my.1password.com) | Swift container: iiif_pres_canadiana, Redis cache: iiif_pres_canadiana |
-| [IIIF Image](https://github.com/crkn-rcdr/cihm-cantaloupe) | (Cantaloupe/Loris/etc.) | Swift container: iiif_image_canadiana |
-| PDF | N/A | Swift container: pdf_canadiana |
-| [ARK](https://github.com/crkn-rcdr/noid-ark) | ark-canadiana, internal port: xxxx, [.env (access protected)](https://start.1password.com/open/i?a=PTZ4LGIASRD7LAT3GQWIQBPHGU&v=yb4563uqdpjn7xdgzw4f7tp3qy&i=uez5nqx4shqzhxdqlg7u7johoq&h=my.1password.com)  | Solr core: ark_map_canadiana |
+| Service | Docker Container | Data Stores | Replaces |
+|---------|------------------|-------------|-------------|
+| [Blacklight Search](https://github.com/crkn-rcdr/crkn_canadiana_blacklight) | blacklight-canadiana, internal port: 3000, [.env (access protected)](https://start.1password.com/open/i?a=PTZ4LGIASRD7LAT3GQWIQBPHGU&v=yb4563uqdpjn7xdgzw4f7tp3qy&i=qw7bpykrrk6ylk4hh2pngnswwe&h=my.1password.com) | Solr core: [blacklight_marc_canadiana](https://github.com/crkn-rcdr/crkn_canadiana_blacklight/tree/master/data/data/blacklight_marc/conf) | CAP container, Solr copresentation index, Solr cosearch index, CouchDB copresentation2 database, CouchDB cosearch2 database |
+| [IIIF Content Search](https://github.com/crkn-rcdr/crkn_iiif_content_search) | iiif-cs-canadiana, internal port: 3000, [.env (access protected)](https://start.1password.com/open/i?a=PTZ4LGIASRD7LAT3GQWIQBPHGU&v=yb4563uqdpjn7xdgzw4f7tp3qy&i=ozakedjbvm62ygkdvertamb3ky&h=my.1password.com) | Solr core: [content_search_canadiana](https://github.com/crkn-rcdr/crkn_iiif_content_search/tree/main/solr/config) | Replaces parts of the CAP container, parts of Solr cosearch index |
+| [IIIF Presentation](https://github.com/crkn-rcdr/crkn-IIIF-presentation-api) | iiif-p-canadiana, internal port: xxxx, [.env (access protected)](https://start.1password.com/open/i?a=PTZ4LGIASRD7LAT3GQWIQBPHGU&v=yb4563uqdpjn7xdgzw4f7tp3qy&i=zacrecf22qajihjousdawnqpua&h=my.1password.com) | Swift container: iiif_pres_canadiana, Redis cache: iiif_pres_canadiana | Replaces parts of the CAP container, parts of Solr copresentation index, and the CouchDB access and canvas databases |
+| [IIIF Image](https://github.com/crkn-rcdr/cihm-cantaloupe) | (Cantaloupe/Loris/etc.) | Swift container: iiif_image_canadiana | Replaces N/A or Canteloupe if switching to another software |
+| PDF | N/A | Swift container: pdf_canadiana | Replaces access-files object storage |
+| [ARK](https://github.com/crkn-rcdr/noid-ark) | ark-canadiana, internal port: xxxx, [.env (access protected)](https://start.1password.com/open/i?a=PTZ4LGIASRD7LAT3GQWIQBPHGU&v=yb4563uqdpjn7xdgzw4f7tp3qy&i=uez5nqx4shqzhxdqlg7u7johoq&h=my.1password.com)  | Solr core: ark_map_canadiana | Replaces none - new |
 
 ---
 
